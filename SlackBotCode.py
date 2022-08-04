@@ -1,19 +1,18 @@
+#Import
 import logging
-
-
-#Loading Assets
+import os
 from dotenv import load_dotenv
 from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler 
 
-#Confused on this part???
+#Config
 logging.basicConfig(level=logging.INFO)
-
-#Loading Slack Credentials 
 load_dotenv()
 
-SLACK_BOT_TOKEN = "xoxb-3885365966273-3875161703284-dwCjRJlilW1j1uIXwkLC6oqK"
-SLACK_APP_TOKEN = "xapp-1-A03SCD4F080-3866115550438-9f3531f78401830bc1ee982a453a2eb8552e502436db32f489eea0a6e5dc93f0"
+#Tokens
+SLACK_BOT_TOKEN = os.getenv("BOT_TOKEN")
+SLACK_APP_TOKEN = os.getenv("APP_TOKEN")
+#print(SLACK_BOT_TOKEN)
 
 #Creating an isntance of a Slack App
 app = App(token=SLACK_BOT_TOKEN)
