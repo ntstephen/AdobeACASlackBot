@@ -34,12 +34,12 @@ def mention_handler(body, context, payload, options, say, event):
 
 @app.event("message")
 def message_handler(body, context, payload, options, say, event):
-    #pass
+    pass
 
 #Designate main fucntion and start handlers
-    if __name__ == "__main__":
-        handler = SocketModeHandler(app, SLACK_APP_TOKEN)
-        handler.start()
+if __name__ == "__main__":
+    handler = SocketModeHandler(app, SLACK_APP_TOKEN)
+    handler.start()
 
 #print(WebScrap.filtered_title)
 #print(WebScrap.filtered_list)
