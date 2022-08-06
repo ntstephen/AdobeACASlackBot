@@ -30,5 +30,5 @@ for i in index.link_list:
                         break
 
 #Printing Results
-print(filtered_list)
-print(filtered_title)
+#print(filtered_list)
+#print(filtered_title)
