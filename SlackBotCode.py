@@ -21,7 +21,7 @@ load_dotenv()
 #Tokens
 SLACK_BOT_TOKEN = os.getenv("BOT_TOKEN")
 SLACK_APP_TOKEN = os.getenv("APP_TOKEN")
-print(SLACK_BOT_TOKEN)
+
 
 #Creating an isntance of a Slack App
 app = App(token=SLACK_BOT_TOKEN)
