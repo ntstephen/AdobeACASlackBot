@@ -1,4 +1,3 @@
-'''
 #Imports
 from bs4 import BeautifulSoup
 import requests
@@ -37,4 +36,3 @@ for i in xml_links:
         the_link = item.link.text
         link_list.append(the_link)
         title_list.append(title)
-        '''
