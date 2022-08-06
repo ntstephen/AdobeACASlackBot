@@ -30,16 +30,8 @@ app = App(token=SLACK_BOT_TOKEN)
 @app.event("app_mention")
 def mention_handler(body, context, payload, options, say, event):
     print(event)
-    """
-    with open("data.csv", "w", encoding='utf8', newline='') as f:
-        thewriter = writer(f)
-        header = ['Title', 'Url']
-        thewriter.writerow(header)
-        for x in Y:
-            info = [WebScrap.filtered_title, WebScrap.filtered_list]
-            thewriter.writerows(info)
     say("Hello World")
-    """
+
 @app.event("message")
 def message_handler(body, context, payload, options, say, event):
     #pass
